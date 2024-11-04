@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "4ba65f5c-339b-4790-b114-386e4975ae10",
+		"name": "Laravel4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34337681"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/register?name=Cristina&email=Cristina@cristina.com&password=123456&c_password=123456",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cristina"
+						},
+						{
+							"key": "email",
+							"value": "Cristina@cristina.com"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						},
+						{
+							"key": "c_password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShowUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/user/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoreEventType",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/store?description=Festival Folclore",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"store"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Festival Folclore"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoreEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/event?event_name=Medusa&event_detail=Festival Tecno&event_type_id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"event"
+					],
+					"query": [
+						{
+							"key": "event_name",
+							"value": "Medusa"
+						},
+						{
+							"key": "event_detail",
+							"value": "Festival Tecno"
+						},
+						{
+							"key": "event_type_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BookEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/users/2/events/3/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"2",
+						"events",
+						"3",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListEvents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/user/2/events",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"2",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/event/3/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"event",
+						"3",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListEventType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/type/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"type",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
